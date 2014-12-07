@@ -1,7 +1,7 @@
 stash
 =====
 
-logstash plugins
+logstash plugins and configurations.
 
 
 # How to run ?
@@ -9,7 +9,7 @@ logstash plugins
 Specify `-f` and `--pluginpath` options to run. For example,
 
   ```
-  logstash --pluginpath . -f conf/cspoc.conf
+  logstash --pluginpath . -f conf/iis.conf
   ```
 
 # Tips
