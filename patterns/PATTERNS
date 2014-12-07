@@ -1,1 +1,4 @@
 COMMAND /usr/.*
+IIS_DATE %{YEAR}[/-]%{MONTHNUM}[/-]%{MONTHDAY}
+IIS_DATETIME %{IIS_DATE}[- ]%{TIME}
+IIS %{IIS_DATETIME:timestamp} %{IPORHOST:server_ip} %{WORD:verb} %{NOTSPACE:request_path} %{NOTSPACE:query} %{NUMBER:port} %{NOTSPACE:username} %{IPORHOST:client_ip} %{NOTSPACE:use_agent} %{NUMBER:status} %{NUMBER:substatus} %{NUMBER:win32_status} %{NUMBER:time_taken}
